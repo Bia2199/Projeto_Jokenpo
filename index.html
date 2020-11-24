@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bianca Pereira">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="https://github.com/biancaps">Jokenpô - RESTful API</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="container-flex">
+            <div class="flex-item">
+                <div class="m-top-10px">
+                    <span class="flex-item-title">Jogadores</span>
+                </div>
+                <table id="players-table" class="game-table">
+                    <tbody>
+                        <tr>
+                            <th>#</th>
+                            <th>Jogador</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="w-100">
+                    <label for="player">Jogador:</label>
+                    <input id="player" class="smooth-input" placeholder="Nome do Jogador"></input>
+                    <button id="addPlayerBtn" class="smooth-button">Adicionar &#128190;</button>
+                </div>
+
+            </div>
+            <div class="flex-item">
+                <div class="m-top-10px">
+                    <span class="flex-item-title">Jogadas</span>
+                </div>
+                <table id="plays-table" class="game-table">
+                    <tbody>
+                        <tr>
+                            <th>Jogador</th>
+                            <th>Jogada</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="w-100">
+                    <label for="player">Jogada:</label>
+                    <select id="player-dropdown" class="smooth-input">
+                    </select>
+                    <select id="play" class="smooth-input">
+                        <option value="1">Pedra</option>
+                        <option value="2">Papel</option>
+                        <option value="3">Tesoura</option>
+                    </select>
+                    <button id="addPlayBtn" class="smooth-button">Adicionar &#128190;</button>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="m-top-10px">
+                    <span class="flex-item-title">Resultados</span>
+                </div>
+                <table id="results-table" class="game-table">
+                    <tbody>
+                        <tr>
+                            <th>Jogador</th>
+                            <th>Resultados</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="text-center">
+            <button id="resultBtn" class="smooth-button"> JOGAR &#128260;</button>
+        </div>
+
+        <div class="console-options">
+            <h3>Console</h3>
+
+            <div>
+                <div id="SuccessChk">
+                    <label for="mensagemSucessoChk">Incluir mensagens de sucesso</label>
+                    <input id="mensagemSucessoChk" type="checkbox" checked>
+                </div>
+
+                <div id="ErrorChk">
+                    <label for="mensagemErroChk">Incluir mensagens de erro</label>
+                    <input id="mensagemErroChk" type="checkbox" checked>
+                </div>
+            </div>
+        </div>
+        <div class="console"></div>
+
+
+    </div>
+
+    <footer>
+        <p>by Bianca Pereira<br>
+        <a href="mailto:biancapereirasilva21@gmail.com">biancapereirasilva21@gmail.com</a></p>
+    </footer>
+
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jokenpo.js"></script>
+</body>
+
+
+</html>
